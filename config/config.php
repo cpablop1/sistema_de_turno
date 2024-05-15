@@ -1,5 +1,5 @@
 <?php
-define('URL', 'http://localhost/proyecto-mvc/');
+define('URL', 'http://localhost/');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');

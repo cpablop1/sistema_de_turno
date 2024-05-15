@@ -1,2 +1,2 @@
 <?php
-header('location:app/views/layout/layout.php');
+header('location:app/views/ventanilla/ver.php');
