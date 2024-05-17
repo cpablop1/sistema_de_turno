@@ -3,4 +3,6 @@ define('URL', 'http://localhost/');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'nombre_de_la_base_de_datos');
+define('DB_NAME', 'turno');
+
+define('BASE_PATH', dirname(__DIR__) . '/');
