@@ -13,20 +13,18 @@ function listarVentanilla() {
 					}
 			}); */
 	for (let i = 0; i < 15; i++) {
-		let num = (i>=10) ? `<i class="bi bi-${i.toString().charAt(0)}-square-fill"><i class="bi bi-${i.toString().charAt(1)}-square-fill">` : `<i class="bi bi-${i+1}-square-fill">`;
+		let num = (i>=10) ? `<i class="bi bi-${i.toString().charAt(0)}-square-fill"></i><i class="bi bi-${i.toString().charAt(1)}-square-fill"></i>` : `<i class="bi bi-${i+1}-square-fill"></i>`;
 		console.log(num);
 		card += `
             <div class="col">
-            <div class="card">
+            <div class="card mt-3">
               <div class="card-header">
-                <h3>
+                <h5>
                     <b>Ventanilla ${num}</b>
-                </h3>
+                </h5>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary">Ingresar</a>
               </div>
             </div>
         </div>
