@@ -31,7 +31,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="../ventanilla/ver.php">Ventanilla</a></li>
-                            <li><a class="dropdown-item" href="#">Ticket</a></li>
+                            <li><a class="dropdown-item" href="../ticket/ver.php">Ticket</a></li>
                             <li><a class="dropdown-item" href="../turno/ver.php">Turno</a></li>
                             <li>
                                 <hr class="dropdown-divider">
