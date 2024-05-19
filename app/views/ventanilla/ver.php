@@ -24,6 +24,7 @@ require_once '../layout/header.php';
 
 <?php
 include './crear.php';
+include './ventanillaUsuario.php';
 ?>
 
 <?php

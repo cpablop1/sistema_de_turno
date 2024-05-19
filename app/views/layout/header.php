@@ -30,13 +30,13 @@
                             <i class="bi bi-menu-button-wide-fill"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Ventanilla</a></li>
+                            <li><a class="dropdown-item" href="../ventanilla/ver.php">Ventanilla</a></li>
                             <li><a class="dropdown-item" href="#">Ticket</a></li>
-                            <li><a class="dropdown-item" href="#">Turno</a></li>
+                            <li><a class="dropdown-item" href="../turno/ver.php">Turno</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Reiniciar todo</a></li>
+                            <li><a class="dropdown-item" id="reiniciar_todo">Reiniciar todo</a></li>
                         </ul>
                     </li>
                 </ul>

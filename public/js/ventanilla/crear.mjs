@@ -1,4 +1,5 @@
 import { host } from "../config.mjs";
+import listarVentanilla from "./listar.mjs";
 function crearVentanilla() {
 	fetch(`${host}/app/controllers/ventanilla/VentanillaController.php`, {
 		method: 'POST', // Especifica que es una petición POST
@@ -17,6 +18,8 @@ function crearVentanilla() {
 			if (data.data) {
 				alert(data.msg);
 				bootstrap.Modal.getInstance(document.getElementById('mdl_crear_ventanilla')).hide();
+				setTimeout(() => listarVentanilla(), 500);
+
 			}
 		});
 }
