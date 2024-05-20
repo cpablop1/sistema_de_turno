@@ -4,12 +4,17 @@ require_once '../layout/header.php';
 
 <style>
 	/* Estilos para la impresión */
+.ticket-container{
+    display: none;
+}
+
 @media print {
 		.navbar, .imprimir{
 			display: none;
 		}
 
     .ticket-container {
+        display:block;
         width: 300px;
         /* Ancho del ticket */
         margin: 0 auto;
@@ -43,13 +48,18 @@ require_once '../layout/header.php';
 
 </style>
 
-<div class="d-flex justify-content-center align-items-center full-height imprimir">
-	<h1 class="mt-5">
-		<span role="button" class="badge bg-primary fs-1" id="imprimir_ticket">Imprimir</span>
-	</h1>
-</div>
-<div class="d-flex justify-content-center align-items-center full-height imprimir">
-	<h1 class="fs-1">🖨</h1>
+<div class="imprimir">
+    <div class="d-flex justify-content-center align-items-center full-height">
+        <h1 class="mt-5">
+            <span role="button" class="badge bg-primary fs-1" id="imprimir_ticket">Imprimir</span>
+        </h1>
+    </div>
+    <div class="d-flex justify-content-center align-items-center full-height">
+        <h1 class="fs-1">🖨</h1>
+    </div>
+    <div class="d-flex justify-content-center align-items-center full-height">
+        <h1 class="fs-1"><span class="badge bg-secondary" id="turno">Turno -----</span></h1>
+    </div>
 </div>
 
 <div class="ticket-container">
@@ -62,7 +72,7 @@ require_once '../layout/header.php';
 	<h1>Servicio al cliente</h1>
 	<hr>
 	<h1>TURNO</h1>
-	<h1>1</h1>
+	<h1 id="turno_ticket">-----</h1>
 	<hr>
 </div>
 

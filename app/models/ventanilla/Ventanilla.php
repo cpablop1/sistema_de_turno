@@ -79,7 +79,10 @@ class Ventanilla
         $sql = "TRUNCATE TABLE turno";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
-
+        /* Reiniciamos ticket */
+        $sql = "TRUNCATE TABLE ticket";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
         return 0;
     }
 
@@ -100,7 +103,7 @@ class Ventanilla
             $sql = "SELECT * FROM turno";
             $stmt = $this->conn->prepare($sql);
             $stmt->execute();
-            $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            //$resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
             /* Actualizamos la ventanilla */
             $turno = $resultados[0]['turno'];
             $sql = "UPDATE ventanilla SET turno = $turno WHERE id_ventanilla = $id_ventanilla";
@@ -120,7 +123,7 @@ class Ventanilla
             $sql = "SELECT * FROM turno";
             $stmt = $this->conn->prepare($sql);
             $stmt->execute();
-            $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+           // $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
         return $resultados;
     }
