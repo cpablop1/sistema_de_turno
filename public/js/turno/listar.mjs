@@ -6,6 +6,7 @@ function listarTurno() {
             let listar = '';
             let ver_turno = document.getElementById('ver_turno');
             Array.from(data.data, (values, index) => {
+                console.log(values);
                 listar += `
                 <div class="card mb-3">
                 <div class="row g-0">

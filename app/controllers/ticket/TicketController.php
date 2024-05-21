@@ -1,8 +1,8 @@
 <?php
-require '../../models/turno/Turno.php';
+require '../../models/ticket/Ticket.php';
 
-$turno = new Turno();
-$listar = $turno->listarTurno();
+$ventanilla = new Ticket();
+$listar = $ventanilla->listarTicket();
 $data = $listar;
 
 $jsonData = array(
