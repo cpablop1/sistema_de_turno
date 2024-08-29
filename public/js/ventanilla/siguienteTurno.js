@@ -1,7 +1,7 @@
-import { host } from "../config.mjs";
-import emitirPitido from "./emitirPitido.mjs";
-import emitirTurno from "./emitirTurno.mjs";
-function siguienteTurno(id) {
+import { host } from "../config.js";
+import { emitirPitido } from "./emitirPitido.js";
+import { emitirTurno } from "./emitirTurno.js";
+export function siguienteTurno(id) {
 	let data = {
 		id_ventanilla: id,
 		siguiente_turno: id
@@ -26,5 +26,3 @@ function siguienteTurno(id) {
 			}, 500);
 		});
 }
-
-export default siguienteTurno;

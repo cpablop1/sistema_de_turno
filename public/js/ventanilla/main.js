@@ -1,10 +1,10 @@
-import crearVentanilla from './crear.mjs';
-import listarVentanilla from './listar.mjs';
-import activarVentanilla from './activar.mjs';
-import desactivarVentanilla from './desactivar.mjs';
-import siguienteTurno from './siguienteTurno.mjs';
-import emitirPitido from './emitirPitido.mjs';
-import emitirTurno from './emitirTurno.mjs';
+import { crearVentanilla } from './crear.js';
+import { listarVentanilla } from './listar.js';
+import { activarVentanilla } from './activar.js';
+import { desactivarVentanilla } from './desactivar.js';
+import { siguienteTurno } from './siguienteTurno.js';
+import { emitirPitido } from './emitirPitido.js';
+import { emitirTurno } from './emitirTurno.js';
 
 window.onload = () => {
 	listarVentanilla();

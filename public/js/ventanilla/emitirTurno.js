@@ -1,4 +1,4 @@
-function emitirTurno() {
+export function emitirTurno() {
     const turno = document.getElementById('atendiendo_turno').getAttribute('txt_turno');
     const ventanilla = document.getElementById('atendiendo_turno').getAttribute('txt_ventanilla');
     const mensaje = `Turno ${turno}, acercarse a la ventanilla ${ventanilla} por favor.`;
@@ -14,5 +14,3 @@ function emitirTurno() {
     // Emitir el mensaje
     window.speechSynthesis.speak(utterance);
 }
-
-export default emitirTurno;

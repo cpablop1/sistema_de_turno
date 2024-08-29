@@ -1,6 +1,6 @@
-import { host } from "../config.mjs";
+import { host } from "../config.js";
 
-function imprimirTicket() {
+export function imprimirTicket() {
 	console.log('Imprimiendo Ticket...');
 
 	fetch(`${host}/app/controllers/ticket/TicketController.php`, {
@@ -14,5 +14,3 @@ function imprimirTicket() {
 
 	//window.print();
 }
-
-export default imprimirTicket;

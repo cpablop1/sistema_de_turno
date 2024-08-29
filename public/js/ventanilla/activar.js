@@ -1,5 +1,5 @@
-import { host } from "../config.mjs";
-function activarVentanilla(id) {
+import { host } from "../config.js";
+export function activarVentanilla(id) {
 	fetch(`${host}/app/controllers/ventanilla/VentanillaController.php?id=${id}`, {
 	}).then(response => response.json())
 		.then(data => {
@@ -10,5 +10,3 @@ function activarVentanilla(id) {
             document.getElementById('btn_salir_mdl_ventanilla_usuario').setAttribute('id_ventanilla', id_ventanilla);
 		});
 }
-
-export default activarVentanilla;

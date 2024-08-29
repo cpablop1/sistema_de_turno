@@ -1,5 +1,5 @@
-import { host } from "../config.mjs";
-function listarVentanilla() {
+import { host } from "../config.js";
+export function listarVentanilla() {
 	let ventanilla = document.getElementById('ventanilla');
 	ventanilla.innerHTML = '';
 	let card = '';
@@ -26,5 +26,3 @@ function listarVentanilla() {
 			ventanilla.innerHTML = card;
 		});
 }
-
-export default listarVentanilla;

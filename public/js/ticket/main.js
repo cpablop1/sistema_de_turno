@@ -1,4 +1,4 @@
-import imprimirTicket from "./imprimir.mjs";
+import { imprimirTicket } from "./imprimir.js";
 
 document.getElementById('imprimir_ticket').addEventListener('click', () => {
 	imprimirTicket();

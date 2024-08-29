@@ -1,6 +1,6 @@
 let audioContext;
 
-function emitirPitido() {
+export function emitirPitido() {
 	// Crear el contexto de audio si aún no se ha creado
 	if (!audioContext) {
 		audioContext = new (window.AudioContext || window.webkitAudioContext)();
@@ -29,5 +29,3 @@ function emitirPitido() {
 		oscillator.stop();
 	}, 1000);
 }
-
-export default emitirPitido;

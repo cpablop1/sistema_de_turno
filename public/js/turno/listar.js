@@ -1,5 +1,5 @@
-import { host } from "../config.mjs";
-function listarTurno() {
+import { host } from "../config.js";
+export function listarTurno() {
     fetch(`${host}/app/controllers/turno/TurnoController.php`, {
     }).then(response => response.json())
         .then(data => {
@@ -38,5 +38,3 @@ function listarTurno() {
             ver_turno.innerHTML = listar;
         });
 }
-
-export default listarTurno;

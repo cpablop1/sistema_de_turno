@@ -1,6 +1,6 @@
-import { host } from "../config.mjs";
-import listarVentanilla from "./listar.mjs";
-function crearVentanilla() {
+import { host } from "../config.js";
+import { listarVentanilla } from "./listar.js";
+export function crearVentanilla() {
 	fetch(`${host}/app/controllers/ventanilla/VentanillaController.php`, {
 		method: 'POST', // Especifica que es una petición POST
 		headers: {
@@ -23,5 +23,3 @@ function crearVentanilla() {
 			}
 		});
 }
-
-export default crearVentanilla;
